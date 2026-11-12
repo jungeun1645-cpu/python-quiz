@@ -25,3 +25,24 @@ if __name__ == "__main__":
     
     # 3. 정답 체크 (2번을 입력했다고 가정)
     print(f"결과: {q1.check_answer(2)}") 
+
+
+# 1. 퀴즈 객체 생성
+q1 = Quiz(
+    "파이썬에서 리스트에 요소를 추가하는 메서드는?",
+    ["add()", "append()", "insert()", "push()"],
+    2 # 정답은 2번 append()
+)
+
+# 2. 문제 보여주기
+q1.display_quiz()
+
+# 3. 사용자로부터 답 입력받기
+# input()은 사용자의 입력을 '문자열'로 받기 때문에 int()로 숫자로 바꿔줍니다.
+user_choice = int(input("정답 번호를 입력하세요: "))
+
+# 4. 정답 확인 및 결과 출력
+if q1.check_answer(user_choice):
+    print("✅ 정답입니다! 정말 잘하시네요!")
+else:
+    print("❌ 아쉽네요, 오답입니다. 다시 한번 생각해보세요!")
