@@ -74,22 +74,21 @@ git init, add, commit, push, pull, checkout, clone 명령어를 활용하고 브
 ## Git Clone 실습
 GitHub 저장소를 별도 폴더에 복제하고 README를 수정하여 원격 저장소에 반영했습니다.
 
+## Automated Tests
 
-## ?? ??? ??
+Run 6 automated tests:
 
-?? ???? ?? ??? 6?? ??? ? ????.
+    python -m unittest discover -p test_quiz.py -v
 
-    python -m unittest discover -p "test_quiz.py" -v
+Result: 6 tests passed (OK).
 
-?? ??: 6? ??? ?? ?? (OK)
+See [Testing Guide](docs/TESTING.md).
 
-??? ??? [??? ??](docs/TESTING.md)? ?????.
+## Assignment Screenshots
 
-## ?? ?? ?? ??
-
-- [?? ?? ? ?? ??](docs/screenshots/quiz_play_score.png)
-- [?? ?? ??](docs/screenshots/quiz_add_question.png)
-- [?? ?? ??](docs/screenshots/quiz_high_score.png)
-- [Git ?? ??](docs/screenshots/git_10_commits.png)
-- [Git clone ? pull](docs/screenshots/git_clone_pull.png)
-- [GitHub ???](docs/screenshots/github_repository.png)
+- [Quiz Final Score](docs/screenshots/quiz_play_score.png)
+- [Add Question](docs/screenshots/quiz_add_question.png)
+- [High Score](docs/screenshots/quiz_high_score.png)
+- [Git Commits](docs/screenshots/git_10_commits.png)
+- [Git Clone and Pull](docs/screenshots/git_clone_pull.png)
+- [GitHub Repository](docs/screenshots/github_repository.png)
