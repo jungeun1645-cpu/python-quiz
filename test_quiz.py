@@ -40,3 +40,22 @@ class QuizTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class PersistenceTests(unittest.TestCase):
+    def test_reload_saved_data(self):
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "state.json"
+            with patch.object(QuizGame, "load", return_value=None):
+                game = QuizGame()
+            game.path = path
+            game.high_score = 50
+            game.quiz.add("Git 명령어는?", ["add", "commit", "push", "pull"], 2)
+            game.save()
+
+            with patch.object(QuizGame, "load", return_value=None):
+                restored = QuizGame()
+            restored.path = path
+            restored.load()
+
+            self.assertEqual(restored.high_score, 50)
+            self.assertEqual(len(restored.quiz.questions), 6)
