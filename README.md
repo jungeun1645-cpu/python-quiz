@@ -70,3 +70,6 @@ git init, add, commit, push, pull, checkout, clone 명령어를 활용하고 브
 
 ## 실행 증빙
 실행 화면은 docs/screenshots/ 폴더에 정리합니다.
+
+## Git Clone 실습
+GitHub 저장소를 별도 폴더에 복제하고 README를 수정하여 원격 저장소에 반영했습니다.
