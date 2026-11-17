@@ -74,14 +74,22 @@ git init, add, commit, push, pull, checkout, clone ëª…ë ¹ì–´ë¥¼ í™œìš©í•˜ê³  ë¸Œ
 ## Git Clone ì‹¤ìŠµ
 GitHub ì €ì¥ì†Œë¥¼ ë³„ë„ í´ë”ì— ë³µì œí•˜ê³  READMEë¥¼ ìˆ˜ì •í•˜ì—¬ ì›ê²© ì €ì¥ì†Œì— ë°˜ì˜í–ˆìŠµë‹ˆë‹¤.
 
-## ÀÚµ¿ Å×½ºÆ® ½ÇÇà
 
-´ÙÀ½ ¸í·É¾î·Î 6°³ ÀÚµ¿ Å×½ºÆ®¸¦ ½ÇÇàÇÒ ¼ö ÀÖ½À´Ï´Ù.
+## ?? ??? ??
 
-```bash
-python -m unittest discover -p "test_quiz.py" -v
-```
+?? ???? ?? ??? 6?? ??? ? ????.
 
-Å×½ºÆ® Ç×¸ñ: ±âº» ¹®Á¦, ¹®Á¦ Ãß°¡, ÀÔ·Â °ËÁõ, JSON ÀúÀå, ¼Õ»ó ÆÄÀÏ º¹±¸, µ¥ÀÌÅÍ ÀçºÒ·¯¿À±â.
+    python -m unittest discover -p "test_quiz.py" -v
 
-ÀÚ¼¼ÇÑ Å×½ºÆ® ±â·ÏÀº docs/TESTING.md¸¦ Âü°íÇÏ¼¼¿ä.
+?? ??: 6? ??? ?? ?? (OK)
+
+??? ??? [??? ??](docs/TESTING.md)? ?????.
+
+## ?? ?? ?? ??
+
+- [?? ?? ? ?? ??](docs/screenshots/quiz_play_score.png)
+- [?? ?? ??](docs/screenshots/quiz_add_question.png)
+- [?? ?? ??](docs/screenshots/quiz_high_score.png)
+- [Git ?? ??](docs/screenshots/git_10_commits.png)
+- [Git clone ? pull](docs/screenshots/git_clone_pull.png)
+- [GitHub ???](docs/screenshots/github_repository.png)
